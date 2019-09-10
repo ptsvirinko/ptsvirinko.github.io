@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <title style="font-family: Arial, Helvetica, sans-serif"> Paul Tsvirinko </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydat -->
+
+<BODY onLoad="timerONE=window.setTimeout('slide(120,0)',20);">
+
+        <SCRIPT LANGUAGE="JavaScript">
+        
+        function slide(jumpSpaces,position) {
+          var msg = "This JavaScript will slide in your desired message....Cool...isn't it???.......drink more coffee"
+          var out = ""
+          if (endScroll) {return false}
+          for (var i=0; i<position; i++) 
+            {out += msg.charAt(i)}
+          for (i=1;i<jumpSpaces;i++) 
+            {out += " "}
+          out += msg.charAt(position)
+          window.status = out
+          if (jumpSpaces <= 1) {
+            position++
+            if (msg.charAt(position) == ' ') 
+              {position++ }
+            jumpSpaces = 100-position
+          } else if (jumpSpaces >  3)
+               {jumpSpaces *= .75}
+          else
+            {jumpSpaces--}
+          if (position != msg.length) {
+            var cmd = "slide(" + jumpSpaces + "," + position + ")";
+            scrollID = window.setTimeout(cmd,5);
+          } else {
+            scrolling = false
+            return false 
+          }
+          return true
+        }
+        function ccSetup() {
+         if (scrolling) 
+          if (!confirm('Re-initialize slide?'))
+           return false 
+           endScroll = true 
+           scrolling = true 
+           var killID = window.setTimeout('endScroll=false',6)
+           scrollID = window.setTimeout('slide(100,0)',10)
+           return true 
+        }
+        var scrollID = Object
+        var scrolling = false
+        var endScroll = false
+        </SCRIPT>
+        <font face="Tahoma"><a target="_blank" href="http://www.javascriptfreecode.com/"><span style="font-size: 8pt; text-decoration: none">JavaScript Free Code</span></a></font>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">Search</a></li>
+        </ul>
+        <p> This is personal stuff </p>   
+    </body>
