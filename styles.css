@@ -2,7 +2,9 @@ body {
     font-family: "Lato", sans-serif}
 
   p,h1,h5{
-    text-align: center
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   ul{
     position: -webkit-sticky; /* Safari */
@@ -28,4 +30,8 @@ body {
 
   li a:hover {
     background-color: #111;
+  }
+
+  .Header {
+    line-height: 50%;
   }
