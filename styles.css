@@ -1,5 +1,12 @@
-body {
-    font-family: "Lato", sans-serif}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+  }
 
   p{
     text-align: left;
@@ -32,14 +39,29 @@ body {
     background-color: #111;
   }
 
-  .Header {
+  .welcome {
     /* Text Settings */
     text-align: center;
     /* Image Settings */
     background-image: url(Paralax.jpg);
-    height: 300px;
+    height: 100%;
+    margin: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  /* JS Effects */
+  .ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding-top: 25%;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
   }

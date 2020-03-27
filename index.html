@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html  lang="en" id="content">
     <head>
         <title style="font-family: Arial, Helvetica, sans-serif"> Paul Tsvirinko </title>
         <link rel="stylesheet" href="styles.css">
@@ -7,21 +7,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <!-- Welcome Screen-->
+        <div class="welcome">
+            <h1 class="ml12">
+                <strong>Welcome! : )</strong>
+            </h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script src="script.js"></script>
+        </div>
+
         <!-- Navbar -->
-        <ul>
-            <li><a class="Home" href="index.html">Paul Tsvirinko</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="personal.html">Personal</a></li>
-        </ul>
-        <div class="Header">
+        <div class="Navbar">
+            <ul>
+                <li><a class="Home" href="index.html">Paul Tsvirinko</a></li>
+                <li><a href="#Bio">Bio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Resume">Resume</a></li>
+            </ul>
+        </div>
+        
+        <!--<div class="Header">
             <h1><b>Paul Tsvirinko</b></h1>
             <h5>Computational Cognitive Science BS</h5>
-        </div>
+        </div>-->
+
         <!--Body-->
-        <p title="About Me">I am currently a third-year student at the University of California Davis pursuing a 
-            bachelor's degree in Computational Cognitive Science as well as a minor in Computer Science.<br>
-            I am currently employed by the UC Davis Medical Center School of Medicine IT Department as a 
-            Computer Technician assistant. </p> 
-    </body>
+        
+        <!--Bio-->
+        <section id="Bio">
+            <h3>Bio</h3>
+            <p title="About Me">
+                Hello! <br>
+                <br>
+                My name is Pavel (Paul) Tsvirinko. I am a third year student at UC Davis pursuing a degree in Computational Cognitive Science. <br>
+                <br> 
+                I currently work at the UC Davis Medical Center providing IT support to the various departments in the School of Medicine. <br>
+                <br>
+                When I'm not studying or at work, you can find me snowboarding at Sierra-at-Tahoe, longboarding, reading, or watching my Sacramento Kings. <br>
+                <br>
+                Feel free to check out my resume to learn more about my professional experiences! <br>
+                <br>
+        </section>
+        <!--Contact-->
+        <section id="Contact">
+            <h3>Contact</h3>
+            <p title="Contact">
+                Insta
+                <br>
+                Spotify
+                <br>
+                LinkedIn
+                <br>
+                GitHub
+            </p>
+        </section>
+        <!--Resume-->
+        <section id="Resume">
+            <h3>Resume</h3>
+
+            <p> Feel free to take a look at my resume. ( :</p>
+        </section>
+    </body>    
 
 </html>
