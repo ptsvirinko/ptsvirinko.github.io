@@ -7,13 +7,36 @@ body, html {
     font-family: "Lato", sans-serif;
     height: 100%;
   }
+/* JS Effects */
+.ml12 {
+  font-weight: bold;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding-top: 25%;
+  color: white;
+}
 
-  p{
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  ul{
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+p{
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+}
+
+h3{
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15%;
+}
+
+ul{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -22,46 +45,33 @@ body, html {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-  li {
+}
+  
+li {
     float: left;
-  }
+}
 
-  li a {
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 
-  li a:hover {
+li a:hover {
     background-color: #111;
-  }
+}
 
-  .welcome {
+.welcome {
     /* Text Settings */
     text-align: center;
     /* Image Settings */
-    background-image: url(Paralax.jpg);
+    background-image: url(Ice.jpg);
     height: 100%;
     margin: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  /* JS Effects */
-  .ml12 {
-    font-weight: 200;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    padding-top: 25%;
-  }
-  
-  .ml12 .letter {
-    display: inline-block;
-    line-height: 1em;
-  }
+}
